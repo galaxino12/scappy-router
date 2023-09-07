@@ -10,4 +10,6 @@ A simple script to read and copy an article from reuters.com to a text file.
 
 *   python scrappy-router.py https://www.reuters.com/business/aerospace-defense/lockheed-martin-trims-f-35-jet-delivery-outlook-2023-09-06/
 
+Or:
+
 *   python scrappy-router.py in.txt
