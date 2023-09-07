@@ -1,16 +1,13 @@
-# scappy-router
-A simple script to read and copy an article to a text file.
+## Scrappy-router
 
-Usage:
+A simple script to read and copy an article from reuters.com to a text file.
 
-./scrappy-router.py url out.txt
+## Usage:
 
-For now it only works with a single link.
+- python scrappy-router.py url or text file
 
-So, we use:
+## So, we can use for example:
 
-./scrappy-router.py https://www.reuters.com/article/us-health-coronavirus-global-deaths/global-coronavirus-deaths-pass-agonizing-milestone-of-1-million-idUSKBN26K08Y out.txt
+*   python scrappy-router.py https://www.reuters.com/business/aerospace-defense/lockheed-martin-trims-f-35-jet-delivery-outlook-2023-09-06/
 
-Or: 
-
-./scrappy-router.py in.txt out.txt
+*   python scrappy-router.py in.txt
