@@ -45,7 +45,7 @@ def savingInfo(title, large_text):
     output = str(re.sub(reg, '-', title) + '.txt')
     file = open(output, 'w')
     for i in large_text:
-        file.write(str(i+'\n'))
+        file.write(str(i))
     file.close()
     if(Path(os.getcwd() + '\\' + output).is_file()):
         print("Item saved successfully!")   
