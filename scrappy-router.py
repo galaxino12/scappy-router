@@ -30,8 +30,8 @@ def spider(url):
         author = raw.find(lambda t: t.name == "p" and ('Reporting' in t.text or 'Editing' in t.text ))
         main_content = raw.find_all('p', { 'data-testid':re.compile(r'paragraph-.')})
         content_paragraphs = []
-        content_paragraphs.append(f'Title: {title.text} \n\n')
-        content_paragraphs.append(f'Author/s: {author.text} \n\n')
+        content_paragraphs.append(f'Title: {title.text} \n')
+        content_paragraphs.append(f'Author/s: {author.text} \n')
         for paragraphs in main_content:
             content_paragraphs.append(paragraphs.get_text())
         content_paragraphs
@@ -45,7 +45,7 @@ def savingInfo(title, large_text):
     output = str(re.sub(reg, '-', title) + '.txt')
     file = open(output, 'w')
     for i in large_text:
-        file.write(str(i))
+        file.write(str(i+'\n'))
     file.close()
     if(Path(os.getcwd() + '\\' + output).is_file()):
         print("Item saved successfully!")   
