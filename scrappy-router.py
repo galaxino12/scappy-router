@@ -34,7 +34,6 @@ def spider(url):
         content_paragraphs.append(f'Author/s: {author.text} \n')
         for paragraphs in main_content:
             content_paragraphs.append(paragraphs.get_text())
-        content_paragraphs
         savingInfo((f"{title.text}"), content_paragraphs )
     else:
         print('Error getting page:', response.status_code)
